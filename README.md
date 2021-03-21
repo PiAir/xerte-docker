@@ -1,5 +1,5 @@
-# xerte-docker
-Repository with files needed to run Xerte on Docker.
+# xerte-docker (on Raspberry Pi)
+Repository with files needed to run Xerte on Docker. First version aimed specifically at Raspberry Pi4
 
 Note: I am not affiliated with the Xerte project and/or Docker!
 
