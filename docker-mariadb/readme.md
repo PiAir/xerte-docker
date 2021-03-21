@@ -9,5 +9,5 @@ Run using:
 docker-compose up -d
 ```
 
-Many thankt to Michael Kilian for this build.
+Many thanks to Michael Kilian for this build.
 Source: https://github.com/mikilian/arm32v7-mariadb-alpine
