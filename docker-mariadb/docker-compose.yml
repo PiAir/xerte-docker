@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  mysql:
+    image: michaelkilian/arm32v7-mariadb-alpine
+    restart: always
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    environment:
+      MYSQL_ROOT_PASSWORD: tbsp4RC9Pk5sRb5nQNXQDffL7nCTAJjr
+      MYSQL_USER: xerte
+      MYSQL_PASSWORD: AYUaFW5zhQvNzHHcv2q67gzfmMtvmpAD
+      MYSQL_DATABASE: xerte-db
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./data:/var/lib/mysql
