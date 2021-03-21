@@ -13,3 +13,6 @@ And then:
 ```
 docker run -td --name=xerte39 -p 8041:80 -v $PWD/php.ini:/usr/local/etc/php/php.ini -v $PWD/USER-FILES:/var/www/html/xerteonlinetoolkits/USER-FILES xerte39
 ```
+
+
+Xerte Releases: https://github.com/thexerteproject/xerteonlinetoolkits/releases
