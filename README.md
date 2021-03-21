@@ -20,7 +20,7 @@ Use your router to find the ip-address and note it down
 
 ## Install Docker and Docker-compose
 
-Foolow the instructions on: https://devdojo.com/bobbyiliev/how-to-install-docker-and-docker-compose-on-raspberry-pi
+Follow the instructions on: https://devdojo.com/bobbyiliev/how-to-install-docker-and-docker-compose-on-raspberry-pi
 
 ### docker
 ```
@@ -49,4 +49,5 @@ mkdir xerte/USER-FILES
 ```
 
 Download the files from the repository and follow run instructions for MariaDB container and Xerte container.
+
 Run the /setup.php
