@@ -3,6 +3,10 @@ Repository with files needed to run Xerte on Docker. First version aimed specifi
 
 Note: I am not affiliated with the Xerte project and/or Docker!
 
+### IMPORTANT !!
+Although the Dockerfile works if you download it from github, the build version on Dockerhub does not yet work on Raspberry Pi4. This is because I have not setup multi-architecture build correctly for Dockerhub to automatically build other versions than the default amd64 one.
+
+
 ## Preparing the Raspberry pi
 Goto: https://www.raspberrypi.org/software/
 
