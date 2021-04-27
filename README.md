@@ -16,11 +16,36 @@ Download: https://downloads.raspberrypi.org/raspios_lite_armhf/images/raspios_li
 
 Install: https://www.balena.io/etcher/
 
-Add ssh file and wpa_supplicant.conf to boot partition
+Add ssh file to boot partition (use wired internet!)
 
 Boot up and wait...
 
 Use your router to find the ip-address and note it down
+
+## Setup Raspberry Pi
+
+Connect to the pi using usernam: pi and password: raspberry
+Change the password using 'passwd'
+
+Run the config tool:
+```
+sudo raspi-config
+```
+
+Change the hostname to eg rpi4docker
+```
+System Options > Hostname
+```
+Change the GPU memory to 16MB	
+```
+System > Performance Options > GPU Memory > 16MB
+```
+Change Timezone to Amsterdam (if applicable)
+```
+Localisation Options > Timezone > Europe > Amsterdam
+```
+
+Exit and reboot. Reconnect to the Pi
 
 ## Install Docker and Docker-compose
 
@@ -32,6 +57,9 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
 sudo usermod -aG docker pi
+```
+logout and login again as user pi. Test if docker is running properly:
+```
 docker --version
 docker run hello-world
 ```
